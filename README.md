@@ -42,6 +42,6 @@ The Indeed Data was cleaned in `Jupyter Notebook` using `Python` and the `pandas
 The data from IHME was comprehensive, and provided results from numerous states and many different countries. It also provided more hospital data (like number of ventilators needed and ICU beds used) than we need. The data was first cleaned manually in `Excel` and then in `Jupyter Notebook`.
 1. All rows that were the new deaths, new COVID cases, and total deaths were deleted.
 2. All columns that weren't the states of our Top Cities, and over all Country results (USA, New York, Illinois, Massachusetts, California, and Washington) were deleted.
-* &emsp;This was then saved as a CSV to be read in `Jupyter Notebook`
+* This was then saved as a CSV to be read in `Jupyter Notebook`
 3. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
 4. 
