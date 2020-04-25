@@ -47,7 +47,7 @@ The data from IHME was comprehensive, and provided results from numerous states 
 3a. This new column was added to the original COVID data.
 4. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
 
-## Transform
+## Load
 ![flask.png](view/static/img/flask.png)
 
 We used the micro-framework `Flask` inside of `Python` to create our website that would showcase our data. Both `HTML` and the `Bootstrap` library were used to beautify our website.
