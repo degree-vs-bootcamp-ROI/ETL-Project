@@ -36,15 +36,15 @@ The Indeed Data was cleaned in `Jupyter Notebook` using `Python` and the `pandas
   2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.<br><br>
   2b. The posted date had to be made negative for when we created our graphs, since the day posted was the number of days AGO from the day the data was gathered. 
 3. We then dropped all results where there was no job title present.
-4. As a CSV, the datetime was made into an object, so we had to transform it back into a datetime so that it could used later for math that was done in the COVID Data.
+4. As a CSV, the datetime was made into an object, so we had to transform it back into a datetime so that it could used later for math that was done in the COVID-19 Data.
 
-### COVID Data
+### COVID-19 Data
 The data from IHME was comprehensive, and provided results from numerous states and many different countries. It also provided more hospital data (like number of ventilators needed and ICU beds used) than we need. The data was first cleaned manually in `Excel` and then in `Jupyter Notebook`.
-1. All rows that were the new deaths, new COVID cases, and total deaths were deleted.
+1. All rows that were the new deaths, new COVID-19 cases, and total deaths were deleted.
 2. All columns that weren't the states of our Top Cities, and over all Country results (USA, New York, Illinois, Massachusetts, California, and Washington) were deleted.
 * This was then saved as a CSV to be read in `Jupyter Notebook`
-3. The data column needed to be transformed into datetime, so that, the date in the COVID Data could be subtracted for the date the data was gathered in the Indeed Data to create a column that showed how many days ago the results were taken.<br><br>
-3a. This new column was added to the original COVID data.
+3. The data column needed to be transformed into datetime, so that, the date in the COVID-19 Data could be subtracted for the date the data was gathered in the Indeed Data to create a column that showed how many days ago the results were taken.<br><br>
+3a. This new column was added to the original COVID-19 data.
 4. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
 
 ## Load
@@ -55,7 +55,7 @@ We used the micro-framework `Flask` inside of `Python` to create our website tha
 The final data was stored in a `Mongo` database, which was used to print our Indeed results. We chose to limit the number of results chosen to 300, because the 18,000 results we had saved would take too long to load on our page.
 
 ## Final Results & Analysis
-*Consideration: Even though we placed job postings and COVID cases on top of each other we should consider prior COVID spikes and dips as affecting future job postings. So, the dip in COVID cases 19 days ago in CA might account for the spike in job postings 17 days ago, and the subsequent spike in COVID cases 17 days ago might account for the dip in job postings 13 days ago.*
+*Consideration: Even though we placed job postings and COVID-19 cases on top of each other we should consider prior COVID-19 spikes and dips as affecting future job postings. So, the dip in COVID-19 cases 19 days ago in CA might account for the spike in job postings 17 days ago, and the subsequent spike in COVID-19 cases 17 days ago might account for the dip in job postings 13 days ago.*
 
 ### United States of America
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
@@ -64,4 +64,20 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 
 ### New York
 ![NY-COVID](view/static/img/COVID19-CASES-NY.png) ![NY-Jobs](view/static/img/JOBS-COVID-NY.png)
-**Analysis:** New York's first cases of Covid started 42 days ago on March 9th.
+**Analysis:** New York's first cases of COVID-19 started 42 days ago on March 9th. It is clear that as the situation in NY gets worse the job oppurtunities decline.
+
+### Illinois
+![IL-COVID](view/static/img/COVID19-CASES-IL.png)
+**Analysis:** No job postings data from Illinois or nearby states, which would suggest that Chicago is not as popular a city for Data Scientists as <a href="https://datajobs.com/">DataJobs</a> says.
+
+### Massachusetts
+![MA-COVID](view/static/img/COVID19-CASES-MA.png)
+**Analysis:** No job postings data from Massachusetts after 30 days ago, however, their first case of Covid started 36 days ago (March 15th). It's possible that the radius of Boston was too close to NYC and so there was overlap with those results. We can see results for states in CT, NJ, and PA which are near both Massachusetts and New York so it would be hard to say which results are meant for our Boston search.
+
+### California
+![CA-COVID](view/static/img/COVID19-CASES-CA.png) ![CA-Jobs](view/static/img/JOBS-COVID-CA.png)
+**Analysis:** California's first cases of Covid started 46 days ago (March 5th). There is not many job postings provided for California, specifically the San Francisco Bay Area. This might suggest that San Francisco isn't as popular a city for Data Scientists. Or perhaps, since, California is renound for their start-ups, they might be posting their jobs on other sites than Indeed, like AngelList.
+
+### Washington
+![WA-COVID](view/static/img/COVID19-CASES-WA.png)
+**Analysis:** No job postings data from Washington after 30 days ago, which could be because Washington's first cases of COVID-19 started 59 days ago (February 21st), so they would have slowed with the job postings much earlier.
