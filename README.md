@@ -56,3 +56,5 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 
 ## Final Results & Analysis
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
+![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)<br>
+
