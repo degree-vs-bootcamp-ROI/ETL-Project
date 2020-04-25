@@ -1,6 +1,6 @@
 # US Job Market Tests Positive for COVID-19
 
-**Team:** Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Dontamsetti (Data Engineer), Amber Marting (Data Analyst), Firzana Razak (Data Analyst), Anthony Brown (Data Analyst)
+**Team:** Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Dontamsetti (Data Engineer), Amber Martin (Data Analyst), Firzana Razak (Data Analyst), Anthony Brown (Data Analyst)
 
 ## Overview
 The United States has cut nearly 10 million jobs in recent weeks due to the COVID-19 shutdown. In one weeks time, this project will provide an analysis of the impact the COVID-19 shutdown has had on the Data Science job market.
