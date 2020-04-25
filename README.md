@@ -43,5 +43,12 @@ The data from IHME was comprehensive, and provided results from numerous states 
 1. All rows that were the new deaths, new COVID cases, and total deaths were deleted.
 2. All columns that weren't the states of our Top Cities, and over all Country results (USA, New York, Illinois, Massachusetts, California, and Washington) were deleted.
 * This was then saved as a CSV to be read in `Jupyter Notebook`
-3. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
-4. 
+3. The data column needed to be transformed into datetime, so that, the date in the COVID Data could be subtracted for the date the data was gathered in the Indeed Data to create a column that showed how many days ago the results were taken.<br><br>
+3a. This new column was added to the original COVID data.
+4. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
+
+## Transform
+![flask.png](view/static/img/flask.png)
+
+The final data was stored in a `Mongo` database, which was used to print our Indeed results. We chose to limit the number of results chosen to 300, because the 18,000 results we had saved would take too long to load in an `HTML` page.
+
