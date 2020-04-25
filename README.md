@@ -11,6 +11,13 @@ We decided to use <a href="https://www.indeed.com/">Indeed</a> for our job posti
 
 We have the data shown for all of the United States, but we also broke the data down by "Top Cities" for Data Science jobs as provided by <a href="https://datajobs.com/">DataJobs</a>: New York, Chicago, Boston, San Francisco (Bay Area), and Seattle.
 
+### Instructions
+1. Open controller folder in terminal or Git Bash.
+2. Run **python loaddb.py**. 
+3. Open view folder.
+4. Run **python app.py**. 
+5. Open browser window and type http://127.0.0.1:5000/
+
 ### Some Considerations
 Indeed on provides how many dags ago a job was posted as it's timestamp on a posting, and it only goes back so far as 30 days. So any jobs posted before 29 days ago shows up as 30+. This means that 30 days ago in our graphs means 30+ days ago.
 
