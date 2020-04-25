@@ -5,7 +5,7 @@ Team: Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Donta
 ## Overview
 The United States has cut nearly 10 million jobs in the recent weeks due to the COVID-19 shutdown. This project will provide an analysis of the impact the COVID-19 shutdown has had on the Data Science job market.
 
-We decided to use <a href"https://www.indeed.com/">Indeed</a> for our job postings search. We cross-referenced the results with the data from the <a href="https://covid19.healthdata.org/united-states-of-america">Institute for Health Metrics and Evaluation</a> on Covid-19 cases.
+We decided to use <a href="https://www.indeed.com/">Indeed</a> for our job postings search. We cross-referenced the results with the data from the <a href="https://covid19.healthdata.org/united-states-of-america">Institute for Health Metrics and Evaluation</a> on Covid-19 cases.
 
 We have the data shown for all of the United Statest, but we also broke the data down by "Top Cities" for Data Science jobs as provided by <a href="https://datajobs.com/">DataJobs</a>: New York, Chicago, Boston, San Francisco (Bay Area), and Seattle.
 
