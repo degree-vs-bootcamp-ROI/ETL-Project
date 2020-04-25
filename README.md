@@ -64,20 +64,20 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 
 ### New York
 ![NY-COVID](view/static/img/COVID19-CASES-NY.png) ![NY-Jobs](view/static/img/JOBS-COVID-NY.png)
-**Analysis:** New York's first cases of COVID-19 started 42 days ago on March 9th. It is clear that as the situation in NY gets worse the job oppurtunities decline.
+<br>**Analysis:** New York's first cases of COVID-19 started 42 days ago on March 9th. It is clear that as the situation in NY gets worse the job oppurtunities decline.
 
 ### Illinois
 ![IL-COVID](view/static/img/COVID19-CASES-IL.png)
-**Analysis:** No job postings data from Illinois or nearby states, which would suggest that Chicago is not as popular a city for Data Scientists as <a href="https://datajobs.com/">DataJobs</a> says.
+<br>**Analysis:** No job postings data from Illinois or nearby states, which would suggest that Chicago is not as popular a city for Data Scientists as <a href="https://datajobs.com/">DataJobs</a> says.
 
 ### Massachusetts
 ![MA-COVID](view/static/img/COVID19-CASES-MA.png)
-**Analysis:** No job postings data from Massachusetts after 30 days ago, however, their first case of Covid started 36 days ago (March 15th). It's possible that the radius of Boston was too close to NYC and so there was overlap with those results. We can see results for states in CT, NJ, and PA which are near both Massachusetts and New York so it would be hard to say which results are meant for our Boston search.
+<br>**Analysis:** No job postings data from Massachusetts after 30 days ago, however, their first case of Covid started 36 days ago (March 15th). It's possible that the radius of Boston was too close to NYC and so there was overlap with those results. We can see results for states in CT, NJ, and PA which are near both Massachusetts and New York so it would be hard to say which results are meant for our Boston search.
 
 ### California
 ![CA-COVID](view/static/img/COVID19-CASES-CA.png) ![CA-Jobs](view/static/img/JOBS-COVID-CA.png)
-**Analysis:** California's first cases of Covid started 46 days ago (March 5th). There is not many job postings provided for California, specifically the San Francisco Bay Area. This might suggest that San Francisco isn't as popular a city for Data Scientists. Or perhaps, since, California is renound for their start-ups, they might be posting their jobs on other sites than Indeed, like AngelList.
+<br>**Analysis:** California's first cases of Covid started 46 days ago (March 5th). There is not many job postings provided for California, specifically the San Francisco Bay Area. This might suggest that San Francisco isn't as popular a city for Data Scientists. Or perhaps, since, California is renound for their start-ups, they might be posting their jobs on other sites than Indeed, like AngelList.
 
 ### Washington
 ![WA-COVID](view/static/img/COVID19-CASES-WA.png)
-**Analysis:** No job postings data from Washington after 30 days ago, which could be because Washington's first cases of COVID-19 started 59 days ago (February 21st), so they would have slowed with the job postings much earlier.
+<br>**Analysis:** No job postings data from Washington after 30 days ago, which could be because Washington's first cases of COVID-19 started 59 days ago (February 21st), so they would have slowed with the job postings much earlier.
