@@ -60,8 +60,8 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 ### United States of America
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
 ![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)
-<br>**Analysis:** From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
+<br>**Analysis:** The first COVID-19 cases in the US began 59 days ago on February 21st. From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
 
 ### New York
 ![NY-COVID](view/static/img/COVID19-CASES-NY.png) ![NY-Jobs](view/static/img/JOBS-COVID-NY.png)
-**Analysis:** 
+**Analysis:** New York's first cases of Covid started 42 days ago on March 9th.
