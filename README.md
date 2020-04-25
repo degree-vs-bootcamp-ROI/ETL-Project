@@ -53,3 +53,6 @@ The data from IHME was comprehensive, and provided results from numerous states 
 We used the micro-framework `Flask` inside of `Python` to create our website that would showcase our data. Both `HTML` and the `Bootstrap` library were used to beautify our website.
 
 The final data was stored in a `Mongo` database, which was used to print our Indeed results. We chose to limit the number of results chosen to 300, because the 18,000 results we had saved would take too long to load on our page.
+
+## Final Results & Analysis
+![USA-COVID](view/static/img/COVID19-CASES-USA.png)
