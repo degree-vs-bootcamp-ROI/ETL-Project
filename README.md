@@ -1,4 +1,4 @@
-# US JOB MARKET TEST POSITIVE FOR COVID-19
+# US Job Market Tests Positive for COVID-19
 
 Team: Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Dontamsetti (Data Engineer), Amber Marting (Data Analyst), Firzana Razak (Data Analyst), Anthony Brown (Data Analyst)
 
