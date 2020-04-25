@@ -5,7 +5,7 @@
 ## Overview
 The United States has cut nearly 10 million jobs in recent weeks due to the COVID-19 shutdown. In one weeks time, this project will provide an analysis of the impact the COVID-19 shutdown has had on the Data Science job market.
 
-*Hypothesis: As new cases of COVID-19 crop-up, the number of job postings will decline.*
+*Hypothesis: As new cases of COVID-19 crop up, the number of job postings will decline.*
 
 We decided to use <a href="https://www.indeed.com/">Indeed</a> for our job postings search, and we compared the results with the data from the <a href="https://covid19.healthdata.org/united-states-of-america">Institute for Health Metrics and Evaluation</a> on COVID-19 cases, to see if our hypothesis is true, and to what degree.
 
@@ -56,6 +56,8 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 
 ## Final Results & Analysis
 *Consideration: Even though we placed job postings and COVID-19 cases on top of each other we should consider prior COVID-19 spikes and dips as affecting future job postings. So, the dip in COVID-19 cases 19 days ago in CA might account for the spike in job postings 17 days ago, and the subsequent spike in COVID-19 cases 17 days ago might account for the dip in job postings 13 days ago.*
+
+In general, our hypothesis was correct: as new cases of COVID-19 cropped up, the number of job postings have declined. The degree to which this is true varies from State to State, as seen below.
 
 ### United States of America
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
