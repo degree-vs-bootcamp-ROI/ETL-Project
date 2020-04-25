@@ -1,6 +1,6 @@
 # US Job Market Tests Positive for COVID-19
 
-**Team:** Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Dontamsetti (Data Engineer), Amber Martin (Data Analyst), Firzana Razak (Data Analyst), Anthony Brown (Data Analyst)
+**Team:** Karl Ramsay (Project Manager), Oswaldo Moreno (Data Engineer), Swati Dontamsetti (Data Engineer), Amber Marting (Data Analyst), Firzana Razak (Data Analyst), Anthony Brown (Data Analyst)
 
 ## Overview
 The United States has cut nearly 10 million jobs in recent weeks due to the COVID-19 shutdown. In one weeks time, this project will provide an analysis of the impact the COVID-19 shutdown has had on the Data Science job market.
@@ -55,9 +55,13 @@ We used the micro-framework `Flask` inside of `Python` to create our website tha
 The final data was stored in a `Mongo` database, which was used to print our Indeed results. We chose to limit the number of results chosen to 300, because the 18,000 results we had saved would take too long to load on our page.
 
 ## Final Results & Analysis
-*Consideration: Even though we placed job postings and Covid cases on top of each other we should consider prior Covid spikes and dips as affecting future job postings. So, the dip in Covid cases 19 days ago in CA might account for the spike in job postings 17 days, and the subsequent spike in Covid cases 17 days ago might account for the dip in job postings 13 days ago.*
-### USA
+*Consideration: Even though we placed job postings and COVID cases on top of each other we should consider prior COVID spikes and dips as affecting future job postings. So, the dip in COVID cases 19 days ago in CA might account for the spike in job postings 17 days ago, and the subsequent spike in COVID cases 17 days ago might account for the dip in job postings 13 days ago.*
+
+### United States of America
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
 ![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)
-<br>From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
+<br>**Analysis:** From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
 
+### New York
+![NY-COVID](view/static/img/COVID19-CASES-NY.png) ![NY-Jobs](view/static/img/JOBS-COVID-NY.png)
+**Analysis:** 
