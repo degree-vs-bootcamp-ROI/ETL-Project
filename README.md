@@ -17,3 +17,7 @@ Indeed on provides how many dags ago a job was posted as it's timestamp on a pos
 However, since, most states issued lockdowns around <a href="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_United_States">March 19th</a>, which is 32 days ago from the day we collected our data from Indeed (April 20th), this timed out perfectly for our analysis.
 
 This data is all very new and current, so there is no way of creating a longitudinal study. And as both job-postings are limited in their window of staying on websites, and there is no real test-case to compare this too, there is no way to see how our current results compare to other pandemics of the past.
+
+
+The analysis was done using the ETL model.
+![ETL.png](view/static/img/etl.png)
