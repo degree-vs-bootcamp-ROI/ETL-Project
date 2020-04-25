@@ -55,7 +55,8 @@ We used the micro-framework `Flask` inside of `Python` to create our website tha
 The final data was stored in a `Mongo` database, which was used to print our Indeed results. We chose to limit the number of results chosen to 300, because the 18,000 results we had saved would take too long to load on our page.
 
 ## Final Results & Analysis
+### USA
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
-From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
+<br>From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
 ![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)
 
