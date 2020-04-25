@@ -36,4 +36,12 @@ The Indeed Data was cleaned in `Jupyter Notebook` using `python` and the `pandas
   2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.<br><br>
   2b. The posted date had to be made negative for when we created our graphs, since the day posted was the number of days AGO from the day the data was gathered. 
 3. We then dropped all results where there was no job title present.
+4. As a CSV, the datetime was made into an object, so we had to transform it back into a datetime so that it could used later for math that was done in the COVID Data.
 
+### COVID Data
+The data from IHME was comprehensive, and provided results from numerous states and many different countries. It also provided more hospital data (like number of ventilators needed and ICU beds used) than we need. The data was first cleaned manually in `Excel` and then in `Jupyter Notebook`.
+1. All rows that were the new deaths, new COVID cases, and total deaths were deleted.
+2. All columns that weren't the states of our Top Cities, and over all Country results (USA, New York, Illinois, Massachusetts, California, and Washington) were deleted.
+* This was then saved as a CSV to be read in `Jupyter Notebook`
+3. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
+4. 
