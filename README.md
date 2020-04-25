@@ -30,7 +30,7 @@ Our second data source was from the IHME's website. The data was already provide
 
 ## Transform
 ### Indeed Data
-The Indeed Data was cleaned in `Jupyter Notebook` using `python` and the `pandas` library. The process was many fold.
+The Indeed Data was cleaned in `Jupyter Notebook` using `Python` and the `pandas` library. The process was many fold.
 1. We had to take out "\n" and replace it was a space every where it appeared.
 2. The day posted column came as a phrase like "18 days ago", but we only wanted the number. So we split the column into many columns using the space. And afterwards, we had to split it by "+" to take it out of the "30+ days ago." And then all the columns, except the one with number, were dropped.<br><br>
   2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.<br><br>
@@ -42,6 +42,6 @@ The Indeed Data was cleaned in `Jupyter Notebook` using `python` and the `pandas
 The data from IHME was comprehensive, and provided results from numerous states and many different countries. It also provided more hospital data (like number of ventilators needed and ICU beds used) than we need. The data was first cleaned manually in `Excel` and then in `Jupyter Notebook`.
 1. All rows that were the new deaths, new COVID cases, and total deaths were deleted.
 2. All columns that weren't the states of our Top Cities, and over all Country results (USA, New York, Illinois, Massachusetts, California, and Washington) were deleted.
-* This was then saved as a CSV to be read in `Jupyter Notebook`
+&emsp;* This was then saved as a CSV to be read in `Jupyter Notebook`
 3. The data was first seperated into 6 new data frames - one for each state/country - so that data could be plotted over time using the `matplotlib.pyplot` and `numpy` libraries.
 4. 
