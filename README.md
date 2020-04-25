@@ -56,5 +56,6 @@ The final data was stored in a `Mongo` database, which was used to print our Ind
 
 ## Final Results & Analysis
 ![USA-COVID](view/static/img/COVID19-CASES-USA.png) ![USA-Jobs](view/static/img/JOB-POSTINGS-USA.png)
-![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
+From the graphs provided, it is clear, that as new cases of COVID-19 goes up the job postings are, overall, going down.
+![USA-COVID-Jobs](view/static/img/JOBS-COVID-USA.png)
 
