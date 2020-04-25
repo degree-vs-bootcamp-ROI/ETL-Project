@@ -17,8 +17,7 @@ Indeed on provides how many dags ago a job was posted as it's timestamp on a pos
 However, since, most states issued lockdowns around <a href="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_United_States">March 19th</a>, which is 32 days ago from the day we collected our data from Indeed (April 20th), this timed out perfectly for our analysis.
 
 This data is all very new and current, so there is no way of creating a longitudinal study. And as both job-postings are limited in their window of staying on websites, and there is no real test-case to compare this too, there is no way to see how our current results compare to other pandemics of the past.
-
-
+<br><br>
 The analysis was done using the ETL model.
 ![ETL.png](view/static/img/etl.png)
 
@@ -33,8 +32,8 @@ Our second data source was from the IHME's website. The data was already provide
 ### Indeed Data
 The Indeed Data was cleaned in `Jupyter Notebook` using `python` and the `pandas` library. The process was many fold.
 1. We had to take out "\n" and replace it was a space every where it appeared.
-2. The day posted column came as a phrase like "18 days ago", but we only wanted the number. So we split the column into many columns using the space. And afterwards, we had to split it by "+" to take it out of the "30+ days ago." And then all the columns, except the one with number, were dropped.<br>
-  2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.<br>
+2. The day posted column came as a phrase like "18 days ago", but we only wanted the number. So we split the column into many columns using the space. And afterwards, we had to split it by "+" to take it out of the "30+ days ago." And then all the columns, except the one with number, were dropped.<br><br>
+  2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.<br><br>
   2b. The posted date had to be made negative for when we created our graphs, since the day posted was the number of days AGO from the day the data was gathered. 
 3. We then dropped all results where there was no job title present.
 
