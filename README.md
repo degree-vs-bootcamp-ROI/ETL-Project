@@ -21,3 +21,12 @@ This data is all very new and current, so there is no way of creating a longitud
 
 The analysis was done using the ETL model.
 ![ETL.png](view/static/img/etl.png)
+
+## Extract
+We used 'Beautiful Soup' and 'Splinter' in 'Jupyter Notebook' to scrape data from Indeed. We scraped indeed 5 different times for each of our 5 "Top Cities:" New York, Chicago, Boston, San Francisco (Bay Area), and Seattle.
+
+However, because Indeed provides results based on a radius, it gave us results from other cities and neighboring states as well.
+
+This data was saved as a CSV.
+
+Our second data source was from the IHME's website. The data was already provided to us as CSV.
