@@ -23,10 +23,18 @@ The analysis was done using the ETL model.
 ![ETL.png](view/static/img/etl.png)
 
 ## Extract
-We used 'Beautiful Soup' and 'Splinter' in 'Jupyter Notebook' to scrape data from Indeed. We scraped indeed 5 different times for each of our 5 "Top Cities:" New York, Chicago, Boston, San Francisco (Bay Area), and Seattle.
+We used `Beautiful Soup` in `Jupyter Notebook` to scrape data from Indeed. We scraped indeed 5 different times for each of our 5 "Top Cities:" New York, Chicago, Boston, San Francisco (Bay Area), and Seattle. The data we were looking for was the job title, company, location, salary, and date posted from each job posting.
 
-However, because Indeed provides results based on a radius, it gave us results from other cities and neighboring states as well.
-
-This data was saved as a CSV.
+However, because Indeed provides results based on a radius, it gave us results from other cities and neighboring states as well. All the data collected was gathered into one dataframe, which was saved as a CSV.
 
 Our second data source was from the IHME's website. The data was already provided to us as CSV.
+
+## Transform
+### Indeed Data
+The Indeed Data was cleaned in `Jupyter Notebook` using `python` and the `pandas` library. The process was many fold.
+1. We had to take out "\n" and replace it was a space every where it appeared.
+2. The day posted column came as a phrase like "18 days ago", but we only wanted the number. So we split the column into many columns using the space. And afterwards, we had to split it by "+" to take it out of the "30+ days ago." And then all the columns, except the one with number, were dropped.
+  2a. We were then left with the phrase "Today" and "Just", which was part of "Just Now", which had to be replaced with the number 0.
+  2b. The posted date had to be made negative for when we created our graphs, since the day posted was the number of days AGO from the day the data was gathered. 
+3. We then dropped all results where there was no job title present.
+
