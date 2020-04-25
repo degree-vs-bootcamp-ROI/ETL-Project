@@ -32,6 +32,10 @@ def welcome():
 def Visualization():
     return render_template('graph.html')
 
+@app.route("/job-impact.html")
+def JobImpact():
+    return render_template('job-impact.html')
+
 
 @app.route("/data.html")
 def ViewData():
@@ -40,31 +44,31 @@ def ViewData():
 
 
 @app.route("/ny-data.html")
-def ViewData():
+def ViewNYdata():
     jobs = db.jobs.find().limit(50)
     return render_template('ny-data.html', jobs=jobs)
 
 
 @app.route("/il-data.html")
-def ViewData():
+def ViewILData():
     jobs = db.jobs.find().limit(50)
     return render_template('il-data.html', jobs=jobs)
 
 
 @app.route("/ma-data.html")
-def ViewData():
+def ViewMAData():
     jobs = db.jobs.find().limit(50)
     return render_template('ma-data.html', jobs=jobs)
 
 
 @app.route("/ca-data.html")
-def ViewData():
+def ViewCAData():
     jobs = db.jobs.find().limit(50)
     return render_template('ca-data.html', jobs=jobs)
 
 
 @app.route("/wa-data.html")
-def ViewData():
+def ViewWAData():
     jobs = db.jobs.find().limit(50)
     return render_template('wa-data.html', jobs=jobs)
 
