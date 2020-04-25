@@ -19,7 +19,7 @@ However, since, most states issued lockdowns around <a href="https://en.wikipedi
 This data is all very new and current, so there is no way of creating a longitudinal study. And as both job-postings are limited in their window of staying on websites, and there is no real test-case to compare this too, there is no way to see how our current results compare to other pandemics of the past.
 <br><br><br>
 The analysis was done using the ETL model.
-![ETL.png](view/static/img/etl.png)
+![ETL-update.png](view/static/img/etl-update.png)
 
 ## Extract
 We used `Beautiful Soup` in `Jupyter Notebook` to scrape data from Indeed. We scraped indeed 5 different times for each of our 5 "Top Cities:" New York, Chicago, Boston, San Francisco (Bay Area), and Seattle. The data we were looking for was the job title, company, location, salary, and date posted from each job posting.
